@@ -26,16 +26,16 @@ class HomePage extends StatefulWidget {
 }
 
 class Phrase {
+  Phrase({required this.text, required this.path});
+
   String text;
   String path;
-
-  Phrase({required this.text, required this.path});
 }
 
 class _HomePageState extends State<HomePage> {
   bool enabled = true;
   AudioCache player = AudioCache(prefix: 'assets/audio/');
-  final List<Phrase> phrases = [
+  final List<Phrase> phrases = <Phrase>[
     Phrase(text: 'Bună ziua', path: 'sample1RO.mp3'),
     Phrase(text: 'Bună ziua\n(Franceză)', path: 'sample1FR.mp3'),
     Phrase(text: 'De ce mai suntem aici?', path: 'sample2RO.mp3'),
@@ -75,7 +75,8 @@ class _HomePageState extends State<HomePage> {
           mainAxisSpacing: 20,
         ),
         itemBuilder: (BuildContext ctx, int index) {
-          Phrase crtPhrase = phrases[index];
+          final Phrase crtPhrase = phrases[index];
+
           return InkWell(
             onTap: enabled ? () => _onTap(crtPhrase.path) : null,
             child: Ink(
