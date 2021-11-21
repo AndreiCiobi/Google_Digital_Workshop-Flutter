@@ -21,3 +21,6 @@ jobs:
       - name: Run analysis number shape
         working-directory: ./number_shape
         run: flutter analyze
+      - name: Run analysis speech buttons
+        working-directory: ./speech_buttons
+        run: flutter analyze

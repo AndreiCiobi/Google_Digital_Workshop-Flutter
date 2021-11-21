@@ -17,6 +17,9 @@
       <excludeFolder url="file://$MODULE_DIR$/guess_my_number/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/guess_my_number/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/guess_my_number/build" />
+      <excludeFolder url="file://$MODULE_DIR$/speech_buttons/build" />
+      <excludeFolder url="file://$MODULE_DIR$/speech_buttons/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/speech_buttons/.dart_tool" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Dart SDK" level="project" />
