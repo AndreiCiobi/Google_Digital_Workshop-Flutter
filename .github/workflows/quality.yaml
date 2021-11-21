@@ -24,3 +24,6 @@ jobs:
       - name: Run analysis speech buttons
         working-directory: ./speech_buttons
         run: flutter analyze
+      - name: Run analysis tic-tac-toe
+        working-directory: ./tic_tac_toe
+        run: flutter analyze
