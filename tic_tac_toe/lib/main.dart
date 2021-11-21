@@ -79,7 +79,7 @@ class _TicTacToeState extends State<TicTacToe> {
     }
 
     if (_redCells.contains(0) && _redCells.contains(4) && _redCells.contains(8) ||
-    _redCells.contains(2) && _redCells.contains(4) && _redCells.contains(6)) {
+        _redCells.contains(2) && _redCells.contains(4) && _redCells.contains(6)) {
       setState(() {
         _cells.removeWhere((Cell cell) => cell.color == Colors.green);
       });
