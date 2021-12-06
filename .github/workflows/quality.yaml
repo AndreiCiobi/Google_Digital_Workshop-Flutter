@@ -27,3 +27,6 @@ jobs:
       - name: Run analysis tic-tac-toe
         working-directory: ./tic_tac_toe
         run: flutter analyze
+      - name: Run analysis movies-list
+        working-directory: ./movies_list
+        run: flutter analyze
